@@ -31,6 +31,6 @@ public class App {
 
         ExpenseReportGenerator textReportGenerator = new ExpenseReportGenerator(transactions);
         
-        textReportGenerator.generateReport();
+        textReportGenerator.generateReport("TheLastTask.txt");
     }
 }

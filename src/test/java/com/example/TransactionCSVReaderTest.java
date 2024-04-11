@@ -19,12 +19,12 @@ class TransactionCSVReaderTest {
 
         Transaction firstTransaction = transactions.get(0);
         Assertions.assertEquals("05-12-2023", firstTransaction.getDate(), "Неправильная дата для первой транзакции");
-        Assertions.assertEquals(-7850.0, firstTransaction.getAmount(), 0.001, "Неправильная сумма для первой транзакции");
+        Assertions.assertEquals(-7850.0, firstTransaction.getAmount(), "Неправильная сумма для первой транзакции");
         Assertions.assertEquals("Сільпо", firstTransaction.getDescription(), "Неправильное описание для первой транзакции");
 
         Transaction lastTransaction = transactions.get(transactions.size() - 1);
         Assertions.assertEquals("30-01-2024", lastTransaction.getDate(), "Неправильная дата для последней транзакции");
-        Assertions.assertEquals(-9100.0, lastTransaction.getAmount(), 0.001, "Неправильная сумма для последней транзакции");
+        Assertions.assertEquals(-9100.0, lastTransaction.getAmount(), "Неправильная сумма для последней транзакции");
         Assertions.assertEquals("Інші витрати", lastTransaction.getDescription(), "Неправильное описание для последней транзакции");
     }
 }
